@@ -19,9 +19,13 @@ const Hero = () => {
   };
 
   const handleDownload = () => {
+    // const link = document.createElement("a");
+    // link.href = "/ladicv.pdf"; // Caminho do arquivo dentro da pasta "public"
+    // link.download = "LadislauCUmbiçaPascoal-CV.pdf"; // Nome com que será salvo
+    // link.click();
     const link = document.createElement("a");
-    link.href = "/ladicv.pdf"; // Caminho do arquivo dentro da pasta "public"
-    link.download = "LadislauCUmbiçaPascoal-CV.pdf"; // Nome com que será salvo
+    link.href = `${import.meta.env.BASE_URL}ladicv.pdf`; // Caminho correto com base da app
+    link.download = "LadislauCumbiçaPascoal-CV.pdf";
     link.click();
   };
 
