@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Menu, X, Code, User, Wrench, Mail, FolderOpen, Computer,  } from 'lucide-react';
+import { Menu, X, Code, User, Wrench, Mail, FolderOpen, Computer, } from 'lucide-react';
 import perfil from '../assets/img/perfil.jpg';
 
 const Header = () => {
@@ -23,23 +23,29 @@ const Header = () => {
   };
 
   return (
-    <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-      isScrolled ? 'bg-gray-900/95 backdrop-blur-md shadow-lg' : 'bg-transparent'
-    }`}>
+    <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? 'bg-gray-900/95 backdrop-blur-md shadow-lg' : 'bg-transparent'
+      }`}>
       <nav className="container mx-auto px-6 py-4">
         <div className="flex justify-between items-center">
           <div className="flex items-center space-x-3">
-            {isScrolled && (
+            {/* {isScrolled && (
               <div className="w-10 h-10 rounded-full overflow-hidden border-2 border-primary-400">
-                <img 
+                <img
                   src={perfil}
-                  alt="Ladislau Cumbiça Pascoal" 
+                  alt="Ladislau Cumbiça Pascoal"
                   className="w-full h-full object-cover"
                 />
               </div>
-            )}
+            )} */}
             <div className="flex items-center space-x-2">
-              <Code className="w-8 h-8 text-primary-400" />
+              {/* <Code className="w-8 h-8 text-primary-400" /> */}
+              <div className="w-10 h-10 rounded-full overflow-hidden border-2 border-primary-400">
+                <img
+                  src={perfil}
+                  alt="Ladislau Cumbiça Pascoal"
+                  className="w-full h-full object-cover"
+                />
+              </div>
               <span className="text-xl font-bold text-white">Ladislau Cumbiça Pascoal</span>
             </div>
           </div>
@@ -50,35 +56,35 @@ const Header = () => {
               onClick={() => scrollToSection('inicio')}
               className="text-gray-300 hover:text-primary-400 transition-colors duration-200 flex items-center space-x-1"
             >
-              <User className="w-4 h-4" />
+              {/* <User className="w-4 h-4" /> */}
               <span>Início</span>
             </button>
             <button
               onClick={() => scrollToSection('especialidades')}
               className="text-gray-300 hover:text-primary-400 transition-colors duration-200 flex items-center space-x-1"
             >
-              <Code className="w-4 h-4" />
+              {/* <Code className="w-4 h-4" /> */}
               <span>Especialidades</span>
             </button>
             <button
               onClick={() => scrollToSection('ferramentas')}
               className="text-gray-300 hover:text-primary-400 transition-colors duration-200 flex items-center space-x-1"
             >
-              <Wrench className="w-4 h-4" />
+              {/* <Wrench className="w-4 h-4" /> */}
               <span>Ferramentas</span>
             </button>
             <button
               onClick={() => scrollToSection('projetos')}
               className="text-gray-300 hover:text-primary-400 transition-colors duration-200 flex items-center space-x-1"
             >
-              <FolderOpen className="w-4 h-4" />
+              {/* <FolderOpen className="w-4 h-4" /> */}
               <span>Projectos</span>
             </button>
             <button
               onClick={() => scrollToSection('contato')}
               className="bg-primary-600 hover:bg-primary-700 text-white px-6 py-2 rounded-full transition-colors duration-200 flex items-center space-x-1"
             >
-              <Mail className="w-4 h-4" />
+              {/* <Mail className="w-4 h-4" /> */}
               <span>Contactos</span>
             </button>
           </div>
@@ -100,7 +106,7 @@ const Header = () => {
                 onClick={() => scrollToSection('inicio')}
                 className="text-gray-300 hover:text-primary-400 transition-colors duration-200 flex items-center space-x-2 py-2"
               >
-                <User className="w-4 h-4" />
+                {/* <User className="w-4 h-4" /> */}
                 <span>Início</span>
               </button>
               <button
